@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js">
+        </script>
+    </head>
+
+    <body>
+         <h3> Race against time!</h3> 
+         <p><b><u>Difficulty Level</b></u><br>
+        Enter your preferred difficulty level: <br><br>
+        
+         <!-- Alternative: Create a textbox for the player to enter the difficulty level they wish to play at 
+         <br><br>
+         Enter your preferred difficulty level: <br> 
+         1 = 'Easy',<br> 2 = 'Normal', <br> 3 = 'Hard'
+         <br><br> 
+         <input id="enterBox" type="text"> 
+         <input id="enterButton" type="button" value="Go">
+         <br><br>
+         -->
+
+         <!-- A radio button for each game mode is created and they will be accessed using the DOM method. 
+         In order to ensure that only one button is checked, all the three radio buttons are given the same name but different value --> 
+         <input id="diffEasy" type="radio" name="difficulty" value="easy"> Easy
+         <input id="diffNormal" type="radio" name="difficulty" value="normal"> Normal
+         <input id="diffHard" type="radio" name="difficulty" value="hard"> Hard
+         <br><br>
+         
+         </p>
+
+        <div id="mySVGCanvas" > </div>
+            
+    </body>
+</html>
+
